@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "hospital-management-api",
+		"name": "Hospital Management API",
+		"description": "Complete CRUD operations for Hospital Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "Get All Patients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/patients",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "patients"]
+						}
+					}
+				},
+				{
+					"name": "Get Patient by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/patients/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "patients", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Patient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"gender\": \"Male\",\n    \"age\": 35\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/patients",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "patients"]
+						}
+					}
+				},
+				{
+					"name": "Update Patient",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe Updated\",\n    \"gender\": \"Male\",\n    \"age\": 36\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/patients/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "patients", "1"]
+						}
+					}
+				},
+				{
+					"name": "Delete Patient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/patients/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "patients", "1"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Doctors",
+			"item": [
+				{
+					"name": "Get All Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/doctors",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "doctors"]
+						}
+					}
+				},
+				{
+					"name": "Get Doctor by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/doctors/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "doctors", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Doctor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dr. Smith\",\n    \"speciality\": \"Cardiology\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/doctors",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "doctors"]
+						}
+					}
+				},
+				{
+					"name": "Update Doctor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dr. Smith Updated\",\n    \"speciality\": \"Neurology\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/doctors/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "doctors", "1"]
+						}
+					}
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/doctors/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "doctors", "1"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "Get All Appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/appointments",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "appointments"]
+						}
+					}
+				},
+				{
+					"name": "Get Appointment by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/appointments/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "appointments", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientid\": 1,\n    \"doctorid\": 1,\n    \"date\": \"2024-01-15\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/appointments",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "appointments"]
+						}
+					}
+				},
+				{
+					"name": "Update Appointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientid\": 1,\n    \"doctorid\": 2,\n    \"date\": \"2024-01-20\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/appointments/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "appointments", "1"]
+						}
+					}
+				},
+				{
+					"name": "Delete Appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/appointments/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "appointments", "1"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Bills",
+			"item": [
+				{
+					"name": "Get All Bills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/bills",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "bills"]
+						}
+					}
+				},
+				{
+					"name": "Get Bill by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/bills/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "bills", "1"]
+						}
+					}
+				},
+				{
+					"name": "Create Bill",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientid\": 1,\n    \"amount\": 150.00,\n    \"status\": \"Pending\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/bills",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "bills"]
+						}
+					}
+				},
+				{
+					"name": "Update Bill",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientid\": 1,\n    \"amount\": 200.00,\n    \"status\": \"Paid\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1011/api/v1/bills/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "bills", "1"]
+						}
+					}
+				},
+				{
+					"name": "Delete Bill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1011/api/v1/bills/1",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "1011",
+							"path": ["api", "v1", "bills", "1"]
+						}
+					}
+				}
+			]
+		}
+	]
+} 
